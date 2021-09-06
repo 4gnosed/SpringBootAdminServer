@@ -1,0 +1,31 @@
+logback:
+  logDir: log/dev
+  appName: cess_log
+  fileType: log
+logging:
+  level:
+    org.example: debug
+#  config: classpath:logback-spring.xml
+
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 1274450385@qq.com
+    password: oocbzvzcegtpjidc
+    port: 465
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+  boot:
+    admin:
+      notify:
+        mail:
+          from: 1274450385@qq.com
+          to: gnosed@foxmail.com
